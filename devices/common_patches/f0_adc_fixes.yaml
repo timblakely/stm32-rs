@@ -12,9 +12,9 @@ ADC:
   CFGR1:
     _add:
       WAIT:
+        description: "Wait conversion mode"
         bitOffset: 14
         bitWidth: 1
-        description: "Wait conversion mode"
   SMPR:
     _modify:
       SMPR:

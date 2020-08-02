@@ -1,0 +1,7 @@
+TIM1:
+  _modify:
+    CCR5:
+      description: capture/compare register 5
+    CCR6:
+      description: capture/compare register 6
+      

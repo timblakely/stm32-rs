@@ -1,7 +1,69 @@
 TIM1:
   _modify:
+    description: Advanced timer 1
     CCR5:
       description: capture/compare register 5
     CCR6:
       description: capture/compare register 6
-      
+    CCMR1_Output:
+      name: CCMR1
+      displayName: CCMR1
+      description: capture/compare mode register 1
+    CCMR2_Output:
+      name: CCMR2
+      displayName: CCMR2
+      description: capture/compare mode register 2
+    CCMR3_Output:
+      name: CCMR3
+      displayName: CCMR3
+      description: capture/compare mode register 3
+
+  CCMR1:
+    _add:
+      IC2F:
+        description: Input capture 2 filter
+        bitOffset: 12
+        bitWidth: 4
+        access: read-write
+      IC2PSC:
+        description: Input capture 2 prescalar
+        bitOffset: 10
+        bitWidth: 2
+        access: read-write
+      IC1F:
+        description: Input capture 1 filter
+        bitOffset: 4
+        bitWidth: 4
+        access: read-write
+      IC1PSC:
+        description: Input capture 1 prescalar
+        bitOffset: 2
+        bitWidth: 2
+        access: read-write
+  
+  CCMR2:
+    _add:
+      IC4F:
+        description: Input capture 4 filter
+        bitOffset: 12
+        bitWidth: 4
+        access: read-write
+      IC4PSC:
+        description: Input capture 4 prescalar
+        bitOffset: 10
+        bitWidth: 2
+        access: read-write
+      IC3F:
+        description: Input capture 3 filter
+        bitOffset: 4
+        bitWidth: 4
+        access: read-write
+      IC3PSC:
+        description: Input capture 3 prescalar
+        bitOffset: 2
+        bitWidth: 2
+        access: read-write
+
+  _delete:
+    CCMR1_Input:
+    CCMR2_Input:

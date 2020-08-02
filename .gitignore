@@ -10,3 +10,5 @@ html/
 
 # automatically generated crates
 /stm32*/
+
+bazel-*

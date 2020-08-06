@@ -67,3 +67,63 @@ TIM1:
   _delete:
     CCMR1_Input:
     CCMR2_Input:
+
+  CR2:
+    _modify:
+      OIS1:
+        description: Output Idle state 1
+      OIS1N:
+        description: Output Idle state 1N
+      OIS2:
+        description: Output Idle state 2
+      OIS2N:
+        description: Output Idle state 2N
+      OIS3:
+        description: Output Idle state 3
+      OIS3N:
+        description: Output Idle state 3N
+      OIS4:
+        description: Output Idle state 4
+      OIS4N:
+        description: Output Idle state 4N
+      OIS5:
+        description: Output Idle state 5
+      OIS6:
+        description: Output Idle state 6
+  
+  CCER:
+    _modify:
+      CC1E:
+        description: Capture/compare 1 output enable
+      CC1NE:
+        description: Capture/compare 1 complementary output enable
+      CC1P:
+        description: Capture/compare 1 output polarity
+      CC1NP:
+        description: Capture/compare 1 complementary output polarity
+      CC2E:
+        description: Capture/compare 2 output enable
+      CC2NE:
+        description: Capture/compare 2 complementary output enable
+      CC2P:
+        description: Capture/compare 2 output polarity
+      CC2NP:
+        description: Capture/compare 2 complementary output polarity
+      CC3E:
+        description: Capture/compare 3 output enable
+      CC3NE:
+        description: Capture/compare 3 complementary output enable
+      CC3P:
+        description: Capture/compare 3 output polarity
+      CC3NP:
+        description: Capture/compare 3 complementary output polarity
+      CC4E:
+        description: Capture/compare 4 output enable
+      CC4NE:
+        description: Capture/compare 4 complementary output enable
+      CC4P:
+        description: Capture/compare 4 output polarity
+      CC4NP:
+        description: Capture/compare 4 complementary output polarity
+      
+      
